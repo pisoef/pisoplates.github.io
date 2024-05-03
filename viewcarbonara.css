@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(images/backgroundpic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .recipe-card {
+      max-width: calc(50% - 40px);
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    /* CSS styles for smaller screens */
+  }

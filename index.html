@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piso Plates</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="icon" type="image/png" href="images/favicons.png">
+</head>
+<body>
+  <!--Navigation-->
+  <nav class="sticky-nav">
+    <ul class="sidebar">
+      <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li class="recipes-dropdown">
+        <a href="recipes.html">Recipes</a>
+        <div class="dropdown-content">
+          <a href="quick&easy.html">Quick & Easy</a>
+          <a href="breakfast.html">Egg Dish</a>
+          <a href="lunch.html">Simple Dish</a>
+          <a href="snacks.html">Snacks</a>
+        </div>
+      </li>
+      <li><a href="share.html">Share</a></li>
+      <li><a href="aboutus.html ">About</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><img src="images/ISO LATES.png" alt="Piso Plates Logo" class="logo"></a></li> 
+      <li class="recipes-dropdown">
+        <a href="recipes.html">Recipes</a>
+        <div class="dropdown-content">
+          <a href="quick&easy.html">Quick & Easy</a>
+          <a href="breakfast.html">Egg Dish</a>
+          <a href="lunch.html">Simple Dish</a>
+          <a href="snacks.html">Snacks</a>
+        </div>
+      </li>
+      <li><a href="share.html">Share</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="#" id="sidebarBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-7v2h16V6H4z"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="spacer"></div>
+  <!--Main Page-->
+  <main>
+    <div class="mainpage">
+      <h1>Welcome to Piso Plates!</h1>
+      <p>Welcome to Piso Plates, your go-to hub for affordable, delicious recipes tailored especially for students and budget-conscious foodies.<br> Join our community, share your own recipes, and let's cook up a storm without breaking the bank!</p>
+    </div>
+
+    <!-- Best Meals Section -->
+    <div class="best-meals">
+      <div class="best-meals-header">
+        <span class="best-meals-header-text">Best Meals</span>
+      </div>
+      <div class="recipes">
+        <div class="recipe-card">
+          <img src="images/carbonara.jpg" alt="Creamy Carbonara">
+          <h2>Canton Creamy Carbonara</h2>
+          <p>A Creamy Carbonara but with eveyones favorite canton</p>
+          <a href="viewcarbonara.html" class="btn">View Recipe</a>
+        </div>
+
+        <div class="recipe-card">
+          <img src="images/palabok.jpg" alt="Palabok">
+          <h2>Easy Palabok</h2>
+          <p>A type of Filipino noodle dish but with Mama Sita's Palabaok Gravy Mix.</p>
+          <a href="viewpalabok.html" class="btn">View Recipe</a>
+        </div>
+        <div class="recipe-card">
+          <img src="images/sisig.jpg" alt="Sisig">
+          <h2>Tuna sisig</h2>
+          <p>A Tuna Sisig but with canned Tuna.</p>
+          <a href="viewsisig.html" class="btn">View Recipe</a>
+        </div>
+        <!-- Add more recipe cards as needed -->
+      </div>
+    </div>
+    
+    <div class="startbtn">
+      <a href="quick&easy.html"><button type="button">Start Here!</button></a>
+    </div>
+    
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>123 Main Street, City, Country</p>
+        <p>Phone: +1234567890</p>
+        <p>Email: info@example.com</p>
+      </div>
+      
+      <!-- Navigation Links -->
+      <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <!-- Add more links as needed -->
+        </ul>
+      </div>
+      
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <h3>Connect with Us</h3>
+        <ul>
+          <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+          <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
+          <!-- Add more social media links as needed -->
+        </ul>
+      </div>
+      
+      <!-- Copyright Information -->
+      <div class="copyright">
+        <p>&copy; 2024 Piso Plates. All rights reserved.</p>
+      </div>
+      
+      <!-- Back to Top Button -->
+      <div class="back-to-top">
+        <a href="#top">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+    
+    document.getElementById('sidebarBtn').addEventListener('click', showSidebar);
+  </script>
+</body>
+</html>

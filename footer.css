@@ -1,0 +1,79 @@
+/* Footer Styles */
+.footer-container {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.607);
+  }
+  
+  .contact-info,
+  .footer-nav,
+  .social-media,
+  .copyright,
+  .back-to-top {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .contact-info h3,
+  .footer-nav h3,
+  .social-media h3,
+  .back-to-top h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p,
+  .footer-nav ul,
+  .social-media ul,
+  .copyright p,
+  .back-to-top a {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav ul,
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li,
+  .social-media ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-nav ul li a,
+  .social-media ul li a,
+  .back-to-top a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-nav ul li a:hover,
+  .social-media ul li a:hover,
+  .back-to-top a:hover {
+    text-decoration: underline;
+  }
+  .logo {
+    width: 100px; /* Adjust the width as needed */
+    height: 50; /* This maintains the aspect ratio */
+    padding-left: 10px;
+  }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .recipe-card {
+    max-width: calc(50% - 40px);
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* CSS styles for smaller screens */
+}

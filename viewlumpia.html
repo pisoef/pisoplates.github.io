@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piso Plates</title>
+  <link rel="stylesheet" href="viewcarbonara.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="search.css">
+  <link rel="icon" type="image/png" href="images/favicons.png">
+</head>
+<body>
+  <!--Navigation-->
+  <nav class="sticky-nav">
+    <ul class="sidebar">
+      <li><a href="#" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li class="recipes-dropdown">
+        <a href="recipes.html">Recipes</a>
+        <div class="dropdown-content">
+          <a href="quick&easy.html">Quick & Easy</a>
+          <a href="breakfast.html">Egg Dish</a>
+          <a href="lunch.html">Simple Dish</a>
+          <a href="snacks.html">Snacks</a>
+        </div>
+      </li>
+      <li><a href="share.html">Share</a></li>
+      <li><a href="aboutus.html ">About</a></li>
+    </ul>
+    <ul>
+      <li><a href="index.html"><img src="images/ISO LATES.png" alt="Piso Plates Logo" class="logo"></a></li> 
+      <li class="recipes-dropdown">
+        <a href="recipes.html">Recipes</a>
+        <div class="dropdown-content">
+          <a href="quick&easy.html">Quick & Easy</a>
+          <a href="breakfast.html">Egg Dish</a>
+          <a href="lunch.html">Simple Dish</a>
+          <a href="snacks.html">Snacks</a>
+        </div>
+      </li>
+      <li><a href="share.html">Share</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="#" id="sidebarBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-7v2h16V6H4z"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="spacer"></div>
+
+<header>
+    <h1>Sweet Lumpia Wrapper</h1>
+</header>
+<section class="introduction">
+    <h2>Introduction</h2>
+    <p>A quick and super easy sweet snack!</p>
+</section>
+<section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+        <li>Lumpia Wrapper</li>
+        <li>Condensed Milk</li>
+       
+    </ul>
+</section>
+<section class="how-to-cook">
+    <h2>How to Cook</h2>
+   
+    <p>ctto:<a href="https://www.tiktok.com/@tipidmommy/video/7125003801139940614">HERE!</a>.</p>
+</section>   
+</main>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>123 Main Street, City, Country</p>
+      <p>Phone: +1234567890</p>
+      <p>Email: info@example.com</p>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="footer-nav">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <h3>Connect with Us</h3>
+      <ul>
+        <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
+        <!-- Add more social media links as needed -->
+      </ul>
+    </div>
+    
+    <!-- Copyright Information -->
+    <div class="copyright">
+      <p>&copy; 2024 Piso Plates. All rights reserved.</p>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+      <a href="#top">Back to Top</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+  }
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+  }
+  
+  document.getElementById('sidebarBtn').addEventListener('click', showSidebar);
+</script>
+</body>
+</html>
